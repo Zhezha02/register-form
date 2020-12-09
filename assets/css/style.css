@@ -1,0 +1,71 @@
+
+body {
+  color: #6A6967;
+
+}
+.register {
+ width: 400px;
+ background-color: #F2F3F7;
+}
+.form-header {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.form-title {
+  position: relative;
+}
+.form-title::after,
+.form-title::before { 
+  content: '';
+  position: absolute;
+  display: block;
+  width: 30%;
+  height: 2px;
+  background-color: #6A6967;
+  top: 50%;
+}
+.form-title::after {
+left: 0;
+}
+.form-title::before {
+right: 0;
+}
+
+.register-form {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.user-name {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.user-name > .input {
+  flex:1 100px ;
+  max-width: 40%;
+}
+
+.writing {
+  padding: 10px;
+
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+
+.form-link {
+  text-decoration: none;
+  color: #50A851;
+}
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: #50A851;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+}

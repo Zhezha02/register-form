@@ -3,7 +3,7 @@ body {
   color: #6A6967;
 }
 .register {
- width: 400px;
+ max-width: 400px;
  margin: 0 auto;
  padding: 20px;
  background-color: #F2F3F7;
@@ -22,7 +22,7 @@ body {
   content: '';
   position: absolute;
   display: block;
-  width: 35%;
+  width: 32%;
   height: 2px;
   background-color: #6A6967;
   top: 50%;
@@ -41,11 +41,12 @@ right: 0;
 
 .user-name {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 .user-name > .input{
   max-width: 46%;
-  flex: 1;
+  flex: 1 200px;
 }
 
 .writing {
@@ -55,7 +56,9 @@ right: 0;
 
 .input {
   margin-bottom: 20px;
-  flex: 1 0 ;
+  flex: 1 0;
+  max-width: 400px;
+  width: 100%;  
 }
 .form-link {
   text-decoration: none;
